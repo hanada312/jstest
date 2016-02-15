@@ -7,18 +7,21 @@
 <body>
 <script>
 
-//文字列
-
-    var score = 61;
-
-    if (score > 60){
-        console.log("ok!")
-    }
-    else if (score > 40){
-        console.log("40ok!!")
-    }
-    else{
-        console.log("ng!")
+    var  signal = "blue";
+    switch(signal){
+        case "red":
+            console.log("stop!")
+            break;
+        case "green":
+        case "blue":
+            console.log("go!!")
+            break;
+        case "yellow":
+            console.log("slow down!")
+            break;
+        default:
+            console.log("wrong signal!")
+            break;
     }
 
 </script>
